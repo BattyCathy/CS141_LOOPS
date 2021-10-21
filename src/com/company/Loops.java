@@ -80,6 +80,13 @@ public class Loops {
       //   multiply the number by 2 
       // }
 
+       for (int i = 2; i <= 64;) {
+
+           System.out.print(i + " ");
+           i = i * 2;
+
+       }
+
       
       System.out.println();
       
