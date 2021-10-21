@@ -15,7 +15,7 @@ public class Loops {
 
    //Declare an integer constant to hold the number 5 named MAX
    
-   
+   public static final int MAX = 5;
       
    public static void main(String[] args) {
        
@@ -24,7 +24,7 @@ public class Loops {
        System.out.println();
        
        // complete this method
-       //Loops.forLoop();      
+       Loops.forLoop();
        System.out.println();
        
       
@@ -46,7 +46,7 @@ public class Loops {
    // this method  contains an infinite loop which needs to be fixed
     public static void infinite() {
        // fix me
-       for (int i = 1; i < 5; i++) {
+       for (int i = 1; i < MAX; i++) {
           System.out.println(i);
        }
        
@@ -60,8 +60,12 @@ public class Loops {
       // for (each number >= 1) {
       //   print out the number
       //   subtract one from the number
-       
+
       // }
+
+       for (int num = 5; num >= 1; num--) {
+           System.out.print(num + " ");
+       }
 
 
        
