@@ -29,11 +29,11 @@ public class Loops {
        
       
        // complete this method      
-       //Loops.rootbeer();
+       Loops.rootbeer();
        System.out.println();
        
        // fix this method
-       //Loops.printDigits();
+       Loops.printDigits();
        System.out.println();
        
        // complete this method
@@ -80,10 +80,9 @@ public class Loops {
       //   multiply the number by 2 
       // }
 
-       for (int i = 2; i <= 64;) {
+       for (int i = 2; i <= 64; i *= 2) {
 
            System.out.print(i + " ");
-           i = i * 2;
 
        }
 
@@ -98,7 +97,9 @@ public class Loops {
       //   add 8 to the number 
       // }     
 
-      
+      for (int i = 7; i <=39; i += 8) {
+          System.out.print(i + " ");
+      }
       System.out.println();
       
       //TODO: TASK: print numbers using loop (You Try)
@@ -109,7 +110,9 @@ public class Loops {
       //   divide the number by 3 until number is < 1
       // }   
 
-                 
+             for (int i = 27; i >= 1; i /= 3) {
+                 System.out.print(i + " ");
+             }
 
     }
 
@@ -126,11 +129,19 @@ public class Loops {
    // ...
   
    public static void rootbeer() {
-      System.out.println("10 bottles of rootbeer on the wall, 10 bottles of rootbeer");
-      
-      // TODO: Add for loop here
-      System.out.println("Take one down, pass it around, 9 bottles of rootbeer on the wall");
-      System.out.println("9 bottles of rootbeer on the wall, 9 bottles of rootbeer");
+
+
+      for (int BOTTLES = 10; BOTTLES >= 0; BOTTLES -= 1) {
+          String ROOTBEER = " bottles of rootbeer";
+          String WALL = " on the wall, ";
+          String LYRIC = BOTTLES + ROOTBEER;
+          String LINE = LYRIC + WALL + LYRIC;
+          String TAKEDOWN = " \ntake one down, pass it around, ";
+          String VERSE = LINE + TAKEDOWN + LYRIC;
+          System.out.println(VERSE);
+      }
+
+
 
       
    }
@@ -142,7 +153,7 @@ public class Loops {
     //   print the last digit of the number
     //   divide the number by 10 to make it smaller
     public static void printDigits() {   
-   // NUM = 5678
+
       // set digit label to 1's place
       int digitLabel = 1;
       
